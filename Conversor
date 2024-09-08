@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class palindromos {
+public static void main(String[] args) {
+    Scanner sc = new Scanner (System.in);
+     System.out.println("Introduce una palabra para identificar si es un palindromo : ");
+    String cadena_de_texto = sc.nextLine().toLowerCase();
+
+    for (int i=0 ; i<cadena_de_texto.length() ; i++ ){
+        for(int j = cadena_de_texto.length()-1; j>0;j--){
+
+            if(cadena_de_texto.charAt(i)==cadena_de_texto.charAt(j)){
+                 System.out.println("La palabra es palindroma ");
+            }
+            else{
+                System.out.println("La palabra no es un palindromo");
+            }
+        }
+
+    }
+}    
+}
